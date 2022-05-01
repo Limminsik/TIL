@@ -1,2 +1,3 @@
 # TIL
-# create file name;(Phython)
+# create file, file name(파이썬)
+
