@@ -72,6 +72,18 @@ for n, x in enumerate([*cross_tab.index.values]):
                  fontweight="bold")
 plt.show()
 
+#0602 보건의료데이터마이닝 
+  의사결정나무 Classification, Machine learning
+  
+  import pandas as pd #PANDAS library
+  import numpy as np #NUMPY library
+  import matplotlib.pyplot as plt #matploylib library
+  
+  titanic_df = pd.read_csv("titanic.csv")
+  titanic_df
+  
+  
+
 
 
     
