@@ -48,13 +48,14 @@ for s in list _example :
   
   np.exp(array) : 지수함수, np.log(array) : 자연로그, np,sign(array) : 부호계산
   np.round(arr1) : 반올림 계산, np,cos(arr1) : 삼각함수 cosine 계산, np.isnan(arr1) : boolean 테스트
-  
-PANDAS : 데이터 조작 및 분석을 하기 위한 파이썬 패키지(라이브러리)
+ 
+ 
+>PANDAS : 데이터 조작 및 분석을 하기 위한 파이썬 패키지(라이브러리)
   pandas를 이용해 파일 불러오기
     데이터 파일 저장 위치 : C드라이브 - 사용자 - ms400
     titanic_df = pd.read_csv("titanic.csv:)
     titanic_df
-    
+ 
 Matplotlib : 데이터 시각화를 위한 파이썬 library,  논문 발행 수준의 높은 품질의 그림을 그릴 수 있다.
   import matplotlib.pyplot as plt
 
@@ -82,8 +83,7 @@ Matplotlib : 데이터 시각화를 위한 파이썬 library,  논문 발행 수
 
 
 
-#0602 보건의료데이터마이닝 
-  의사결정나무 Classification, Machine learning
+# 의사결정나무 Classification, Machine learning
   
      import pandas as pd #PANDAS library
      import numpy as np #NUMPY library
