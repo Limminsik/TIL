@@ -1,14 +1,19 @@
 # TIL
 
 # 보건의료데이터마이닝 파이썬
-#05_05 보건의료데이터마이닝 Class
-Jupyter Notebook, Anaconda3 : 주석은 # 문자를 이용하여 달 수 있음. 주석은 not effect to Run
 
-#05_19 보건의료데이터마이닝 Class : Data Type, Basic Standard Function, Numpy / Pandas
-  정수형 = int, 실수형 = float, 복소수형 = complex
+> Jupyter Notebook, Anaconda3 : 주석은 # 문자를 이용하여 달 수 있음.   
+> 주석은 not effect to Run  
+
+#  Data Type, Basic Standard Function, Numpy / Pandas  
+
+  정수형 = int, 실수형 = float, 복소수형 = complex  
+  
   INDEXING, SLICING - String_test
   
-  if 조건문 : 조건에 맞으면 수행, 조건에 맞지 않으면 건너뜀
+  if 조건문 : 조건에 맞으면 수행, 조건에 맞지 않으면 건너뜀  
+  
+  ```
   score = 88
   if score >= 90:
       print("A")
@@ -16,6 +21,7 @@ Jupyter Notebook, Anaconda3 : 주석은 # 문자를 이용하여 달 수 있음.
       print("B")
   else:
       print("C")
+  ```
      
 FOR 구문 : 가장 기본적인 반복문으로, 리스트나 튜플 같은 시퀀스형을 이용하여 반복
 list_example = ["ABCDE", "Phython", "for loop"]
@@ -32,6 +38,7 @@ for s in list _example :
             
 #05_26 보건의료데이터마이닝 Class : Numpy
   NUMPY : 행렬이나 대규모 다차원 배열을 쉽게 처리할 수 있게 해주는 파이썬의 라이브러리, Pandas와 Matplotlib 기반
+  
     import numpy as np
     data1 = [1,2,3,4,5]
     arr1 = np.array(data1)
@@ -48,18 +55,20 @@ PANDAS : 데이터 조작 및 분석을 하기 위한 파이썬 패키지(라이
     titanic_df = pd.read_csv("titanic.csv:)
     titanic_df
     
-Matplotlib : 데이터 시각화를 위한 파이썬 library, 논문 발행 수준의 높은 품질의 그림을 그릴 수 있다.
+Matplotlib : 데이터 시각화를 위한 파이썬 library,  논문 발행 수준의 높은 품질의 그림을 그릴 수 있다.
   import matplotlib.pyplot as plt
 
     cross_tab_prop.plot(
-kind='bar',
-color=["b","r"],
-stacked=True,
-figsize=(15,6))
-plt.legend(loc="upper right", ncol=1)
-plt.ylabel("Probablility of 'survived' at given status")
+    kind='bar',
+    color=["b","r"],
+    stacked=True,
+    figsize=(15,6))
+    plt.legend(loc="upper right", ncol=1)
+    plt.ylabel("Probablility of 'survived' at given status")
 
-for n, x in enumerate([*cross_tab.index.values]):
+
+
+    for n, x in enumerate([*cross_tab.index.values]):
     for (proportion, count, y_loc) in zip(cross_tab_prop.loc[x],
                                           cross_tab.loc[x],
                                           cross_tab_prop.loc[x].cumsum()):
@@ -69,17 +78,19 @@ for n, x in enumerate([*cross_tab.index.values]):
                  color="black",
                  fontsize=12,
                  fontweight="bold")
-plt.show()
+    plt.show()
+
+
 
 #0602 보건의료데이터마이닝 
   의사결정나무 Classification, Machine learning
   
-  import pandas as pd #PANDAS library
-  import numpy as np #NUMPY library
-  import matplotlib.pyplot as plt #matploylib library
+     import pandas as pd #PANDAS library
+     import numpy as np #NUMPY library
+     import matplotlib.pyplot as plt #matploylib library
   
-  titanic_df = pd.read_csv("titanic.csv")
-  titanic_df
+      titanic_df = pd.read_csv("titanic.csv")
+      titanic_df
   
   
 
